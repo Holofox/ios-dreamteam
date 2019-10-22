@@ -24,6 +24,8 @@ class EditListViewController: UIViewController {
         return tableView
     }()
     
+    let refreshControl: UIRefreshControl = UIRefreshControl()
+    
     var presenter: EditListPresentation!
     var notificationToken: NotificationToken? = nil
     var datasource: Results<RealmEntryItem>?
@@ -37,8 +39,11 @@ class EditListViewController: UIViewController {
     }
     
     fileprivate func setupLayout() {
+        self.refreshControl.addTarget(self, action: #selector(refreshList(sender:)), for: .valueChanged)
+        
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.tableView.refreshControl = refreshControl
         self.tableView.register(EntryListTableViewCell.self, forCellReuseIdentifier: EntryListTableViewCell.reuseIdentifier)
         
         self.view.addSubview(self.tableView)
@@ -67,6 +72,11 @@ class EditListViewController: UIViewController {
                 fatalError("\(error)")
             }
         }
+    }
+    
+    @objc private func refreshList(sender: UIRefreshControl) {
+        self.presenter.viewDidLoad()
+        sender.endRefreshing()
     }
     
     deinit {

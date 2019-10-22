@@ -28,6 +28,8 @@ class GroupListViewController: UIViewController {
         return tableView
     }()
     
+    let refreshControl: UIRefreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
@@ -38,7 +40,10 @@ class GroupListViewController: UIViewController {
     }
     
     fileprivate func setupLayout() {
+        self.refreshControl.addTarget(self, action: #selector(refreshList(sender:)), for: .valueChanged)
+        
         self.tableView.dataSource = self
+        self.tableView.refreshControl = refreshControl
         self.tableView.register(GroupListTableViewCell.self, forCellReuseIdentifier: GroupListTableViewCell.reuseIdentifier)
 
         self.view.addSubview(self.tableView)
@@ -80,6 +85,11 @@ class GroupListViewController: UIViewController {
         }
     }
 
+    @objc private func refreshList(sender: UIRefreshControl) {
+        self.presenter.viewDidLoad()
+        sender.endRefreshing()
+    }
+    
     deinit {
         notificationToken?.invalidate()
     }

@@ -32,9 +32,9 @@ extension EntriesListPresenter: EntriesListPresentation {
     func onGenerateTestEntries() {
         DispatchQueue.global(qos: .background).async { [weak self] in
             let items = [
-                EntryItem(title: "Common fox", desc: "@juniperfoxx", mark: .yellow, picturePath: "https://dev.holofox.ru/foxes/fox.jpg"),
-                EntryItem(title: "The cutest fox!", desc: "@juniperfoxx", mark: .red, picturePath: "https://dev.holofox.ru/foxes/cute_fox.jpg"),
-                EntryItem(title: "Yes, she’s cheerful", desc: "@juniperfoxx", mark: .green, picturePath: "https://dev.holofox.ru/foxes/cheerful_fox.jpg")
+                EntryItem(title: "Common fox", desc: "@juniperfoxx", mark: .yellow, picturePath: "https://store.holofox.ru/foxes/fox.jpg"),
+                EntryItem(title: "The cutest fox!", desc: "@juniperfoxx", mark: .red, picturePath: "https://store.holofox.ru/foxes/cute_fox.jpg"),
+                EntryItem(title: "Yes, she’s cheerful", desc: "@juniperfoxx", mark: .green, picturePath: "https://store.holofox.ru/foxes/cheerful_fox.jpg")
             ]
             items.forEach { item in
                 self?.interactor.addEntry(entry: item)

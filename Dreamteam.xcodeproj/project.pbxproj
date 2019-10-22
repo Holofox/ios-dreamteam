@@ -67,7 +67,6 @@
 		6484997C22F871DF00321A61 /* EditListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6484997B22F871DF00321A61 /* EditListBuilder.swift */; };
 		6484997E22F8721000321A61 /* GroupListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6484997D22F8721000321A61 /* GroupListBuilder.swift */; };
 		6484998222F8A3C000321A61 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6484998122F8A3C000321A61 /* UIView+Additions.swift */; };
-		6484998822F8B9D700321A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6484998722F8B9D700321A61 /* LaunchScreen.storyboard */; };
 		6488D11E22FC60A500FC4915 /* EditListViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488D11D22FC60A500FC4915 /* EditListViewController+Delegate.swift */; };
 		6488D12122FC60B400FC4915 /* EditListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488D12022FC60B400FC4915 /* EditListViewController+DataSource.swift */; };
 		6488D12322FC76C200FC4915 /* AddViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488D12222FC76C200FC4915 /* AddViewController+Delegate.swift */; };
@@ -157,7 +156,6 @@
 		6484997B22F871DF00321A61 /* EditListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListBuilder.swift; sourceTree = "<group>"; };
 		6484997D22F8721000321A61 /* GroupListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListBuilder.swift; sourceTree = "<group>"; };
 		6484998122F8A3C000321A61 /* UIView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
-		6484998722F8B9D700321A61 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../../.Trash/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6488D11D22FC60A500FC4915 /* EditListViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditListViewController+Delegate.swift"; sourceTree = "<group>"; };
 		6488D12022FC60B400FC4915 /* EditListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditListViewController+DataSource.swift"; sourceTree = "<group>"; };
 		6488D12222FC76C200FC4915 /* AddViewController+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddViewController+Delegate.swift"; sourceTree = "<group>"; };
@@ -212,7 +210,6 @@
 				6439749522F7565C0089E71F /* Common */,
 				6439749622F7566C0089E71F /* Constants.swift */,
 				6439746722F7486A0089E71F /* AppDelegate.swift */,
-				6484998722F8B9D700321A61 /* LaunchScreen.storyboard */,
 				646DE1D822FD819C003E7CF8 /* Assets.xcassets */,
 				6439747322F7486B0089E71F /* Info.plist */,
 			);
@@ -570,7 +567,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				646DE1D922FD819C003E7CF8 /* Assets.xcassets in Resources */,
-				6484998822F8B9D700321A61 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
