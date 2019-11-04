@@ -2,17 +2,11 @@
 Languages, libraries and tools used
 * [Swift](https://developer.apple.com/swift/)
 * [Realm](https://realm.io/docs/swift/latest/)
-## Getting started
-
-Install [Carthage](https://github.com/Carthage/Carthage) and update a particulars repositories out of a group use the following command:
-```swift
-carthage update --platform iOS
-```
 
 ## Requirements
-* [Xcode 10.1](https://developer.apple.com/documentation/xcode_release_notes/xcode_10_1_release_notes)
-* Swift 4.2.1
-* [macOS High Sierra 10.13.6](https://support.apple.com/en_AU/downloads/high-siera)
+* [Xcode 10.1+](https://developer.apple.com/documentation/xcode_release_notes/xcode_10_1_release_notes)
+* Swift 4.2.1+
+* [macOS High Sierra 10.13.6+](https://support.apple.com/en_AU/downloads/high-siera)
 
 ## Architecture
 This project follows iOS architecture guidelines that are based on VIPER.
